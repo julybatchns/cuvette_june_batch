@@ -1,0 +1,44 @@
+<!-- ! HTML forms are used to collect user input. They are an essential part of web development, enabling user interactions with websites through data submission. -->
+
+<!-- ! An HTML form is defined using the <form> tag. It can contain various form elements such as text fields, checkboxes, radio buttons, submit buttons, etc.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      div {
+        background-color: green;
+      }
+    </style>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form action="/submit-form" method="post">
+      <label for="name">Name</label>
+      <input
+        placeholder="Enter a Name"
+        type="text"
+        name="name"
+        id="name"
+        class="name"
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Enter your Pasword"
+        name="password"
+        id="password"
+        class="password"
+      />
+    </form>
+
+    <!-- <div>1</div>
+    <div class="usa">1</div>
+    <div class="usa">1</div>
+    <div class="usa">1</div>
+    <div id="india">5</div> -->
+  </body>
+</html>
