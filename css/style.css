@@ -1,0 +1,28 @@
+/* Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in HTML or XML. CSS defines how elements should be rendered on screen, on paper, or in other media. */
+
+/* CSS stands for Cascading Style Sheets. It is used to control the layout and presentation of web pages. CSS can style text, change colors, add backgrounds, adjust spacing, and much more. */
+
+/* h1 {
+  background-color: pink;
+  color: chocolate;
+} */
+
+/* .hello {
+  background-color: purple;
+  color: royalblue;
+} */
+/* 
+#hey {
+  background-color: red;
+  color: chocolate;
+} */
+
+/* #id > .class > tagname */
+/* inline > internal > external */
+
+body {
+  background-color: blue;
+}
+* {
+  background-color: red;
+}

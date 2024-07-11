@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="/backendServer" method="post">
+        <div class="formGroup">
+          <label for="firstName">First Name: </label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter your last name"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="formGroup">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="formGroup">
+          <label>Gender:</label>
+          <div class="radioGroup">
+            <label>
+              <input type="radio" name="gender" value="male" /> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other" /> Other
+            </label>
+          </div>
+        </div>
+        <div class="formGroup">
+          <label>Hobbies</label>
+          <div class="checkboxGroup">
+            <label>
+              <input type="checkbox" name="hobbies" value="reading" /> Reading
+            </label>
+            <label>
+              <input type="checkbox" name="hobbies" value="travelling" />
+              Traveling
+            </label>
+            <label>
+              <input type="checkbox" name="hobbies" value="coding" />
+              Coding
+            </label>
+          </div>
+        </div>
+        <div class="formGroup">
+          <label for="country">Country:</label>
+          <select name="country" id="country" required>
+            <option value="">Select your Country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="in">India</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+          </select>
+        </div>
+        <div class="formGroup">
+          <label for="bio">Bio:</label>
+          <textarea
+            name="bio"
+            id="bio"
+            rows="4"
+            placeholder="Tell us about yourself"
+          ></textarea>
+        </div>
+        <div class="formGroup">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
