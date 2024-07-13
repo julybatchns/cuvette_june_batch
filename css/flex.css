@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: greenyellow;
+}
+
+.box {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.box1,
+.box2,
+.box3 {
+  background-color: green;
+  height: 30px;
+}
+
+.box4,
+.box5,
+.box6 {
+  background-color: blueviolet;
+  height: 35px;
+}
+
+.box7,
+.box8,
+.box9,
+.box10 {
+  background-color: red;
+  height: 50px;
+}
