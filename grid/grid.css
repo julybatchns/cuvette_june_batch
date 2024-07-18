@@ -1,0 +1,40 @@
+.Grid_Container {
+  background-color: lime;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100px 200px 300px 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  gap: 20px;
+}
+
+.item {
+  /* width: 100px; */
+  /* height: 100px; */
+  background-color: aquamarine;
+  border: 1px solid orange;
+}
+
+.item1,
+.item2,
+.item3 {
+  background-color: crimson;
+}
+
+.item4,
+.item5,
+.item6 {
+  background-color: rgb(65, 163, 132);
+}
+
+.item7,
+.item8,
+.item9 {
+  background-color: rgb(216, 164, 51);
+}
+.item10,
+.item11,
+.item12 {
+  background-color: crimson;
+}
+
+

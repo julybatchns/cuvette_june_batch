@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 50%;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  display: block;
+}
+
+.box {
+  height: 70px;
+  background-color: tomato;
+  border: 2px solid green;
+  width: 80vw;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    display: none;
+  }
+  img {
+    width: 20%;
+  }
+}
+
+/* 
+360px > 375px > 420px > 540px > 768px > 1024px => Mobile
+1260 > 1336px > 1440px .... 1920px */
