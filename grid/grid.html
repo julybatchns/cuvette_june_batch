@@ -1,93 +1,9 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./grid.css" />
-    <title>CSS Grid Layout</title>
-  </head>
-  <body>
-    <div class="Grid_Container">
-      <div class="item item1">1</div>
-      <div class="item item2">2</div>
-      <div class="item item3">3</div>
-      <div class="item item4">4</div>
-      <div class="item item5">5</div>
-      <div class="item item6">6</div>
-      <div class="item item7">7</div>
-      <div class="item item8">8</div>
-      <div class="item item9">9</div>
-      <div class="item item10">10</div>
-      <div class="item item11">11</div>
-      <div class="item item12">12</div>
-    </div>
-  </body>
-</html> -->
-
-<!-- ? CSS Grid is a powerful layout system in CSS. It allows you to create complex, responsive layouts with ease. -->
-
-<!-- ! The fr unit represents a fraction of the available space. For example, 1fr 2fr means the first column will take 1 part of the space and the second column will take 2 parts: -->
-
-<!-- ? Grid Container: The element on which display: grid; is applied. It’s the direct parent of all the grid items. -->
-
-<!-- * Grid Item: The children (direct descendants) of the grid container. -->
-
-<!-- ! Grid Lines: The dividing lines that make up the structure of the grid (vertical and horizontal). -->
-
-<!-- ? Grid Tracks: The space between two grid lines. This space can be a row or a column. -->
-
-<!-- ! Grid Cell: The smallest unit in the grid, formed by the intersection of a row and a column. -->
-
-<!-- * Grid Area: A rectangular area consisting of one or more grid cells. -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Grid Example</title>
-    <style>
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 100px 100px;
-        grid-gap: 10px;
-      }
-      .item {
-        background-color: lightblue;
-        border: 1px solid #333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .item1 {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-      }
-      .item2 {
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-      }
-      .item3 {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="item item1">Item 1</div>
-      <div class="item item2">Item 2</div>
-      <div class="item item3">Item 3</div>
-    </div>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./grid.css" />
     <title>CSS Grid Template Areas Example</title>
     <style>
       .container {
@@ -123,10 +39,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="item header">Header</div>
-      <div class="item sidebar">Sidebar</div>
-      <div class="item main">Main Content</div>
-      <div class="item footer">Footer</div>
+      <div class="item header Imglobal">Header</div>
+      <div class="item sidebar Imglobal">Sidebar</div>
+      <div class="item main Imglobal">Main Content</div>
+      <div class="item footer Imglobal">Footer</div>
     </div>
   </body>
 </html>

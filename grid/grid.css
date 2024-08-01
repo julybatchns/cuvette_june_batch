@@ -7,6 +7,11 @@
   gap: 20px;
 }
 
+.Imglobal {
+  background-color: green;
+  font-size: 12px;
+}
+
 .item {
   /* width: 100px; */
   /* height: 100px; */
@@ -36,5 +41,3 @@
 .item12 {
   background-color: crimson;
 }
-
-
