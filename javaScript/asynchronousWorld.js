@@ -37,13 +37,13 @@
 //   }, 2000);
 // }
 
-// getCheese((cheese) => {
-//   makeDough(cheese, (dough) => {
-//     bakePizza(dough, (pizza) => {
-//       console.log("got my beautiful pizza", pizza);
-//     });
-//   });
-// });
+getCheese((cheese) => {
+  makeDough(cheese, (dough) => {
+    bakePizza(dough, (pizza) => {
+      console.log("got my beautiful pizza", pizza);
+    });
+  });
+});
 
 // ! Promises
 
@@ -84,6 +84,7 @@ function makeDough(cheese) {
     setTimeout(() => {
       const dough = cheese + "🫓";
       resolve(dough);
+      // reject("bad dough");
     }, 2000);
   });
 }
@@ -97,21 +98,37 @@ function bakePizza(dough) {
   });
 }
 
-getCheese()
-  .then((cheese) => {
+// getCheese()
+//   .then((cheese) => {
+//     console.log("here is the cheese", cheese);
+//     return makeDough(cheese);
+//   })
+//   .then((dough) => {
+//     console.log("here is the dough", dough);
+//     return bakePizza(dough);
+//   })
+//   .then((pizza) => {
+//     console.log("got my beautiful pizza", pizza);
+//   })
+//   .catch((data) => {
+//     console.log("Error Occured", data);
+//   })
+//   .finally(() => {
+//     console.log("Process Ended");
+//   });
+
+async function orderPizza() {
+  try {
+    const cheese = await getCheese();
     console.log("here is the cheese", cheese);
-    return makeDough(cheese);
-  })
-  .then((dough) => {
+    const dough = await makeDough(cheese);
     console.log("here is the dough", dough);
-    return bakePizza(dough);
-  })
-  .then((pizza) => {
+    const pizza = await bakePizza(dough);
     console.log("got my beautiful pizza", pizza);
-  })
-  .catch((data) => {
-    console.log("Error Occured", data);
-  })
-  .finally(() => {
-    console.log("Process Ended");
-  });
+  } catch (error) {
+    console.log("Error occured", error);
+  }
+  console.log("Process Ended");
+}
+
+orderPizza();
